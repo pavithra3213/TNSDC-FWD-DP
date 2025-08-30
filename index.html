@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAVITHRA.M - Portfolio</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Use the Inter font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Load Tailwind CSS from CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body class="bg-gradient-to-br from-blue-200 to-purple-200 min-h-screen text-gray-800 flex flex-col">
+
+    <!-- Header and Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-white bg-opacity-80 backdrop-blur-sm shadow-md rounded-b-lg m-4 p-4">
+        <nav class="container mx-auto flex justify-between items-center">
+            <!-- Website Title/Logo -->
+            <a href="#" class="text-2xl font-bold text-gray-900">PAVITHRA.M</a>
+            
+            <!-- Navigation Links -->
+            <ul class="flex space-x-6 text-lg font-medium">
+                <li><a href="#home" class="hover:text-purple-600 transition-colors">Home</a></li>
+                <li><a href="#about" class="hover:text-purple-600 transition-colors">About Me</a></li>
+                <li><a href="#contact" class="hover:text-purple-600 transition-colors">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="container mx-auto px-4 py-8 flex-grow">
+
+        <!-- Hero Section with Image Placeholder -->
+        <section id="home" class="flex flex-col items-center justify-center text-center py-16">
+            <!-- Image Placeholder with hover effect -->
+            <div class="w-48 h-48 sm:w-64 sm:h-64 rounded-full overflow-hidden shadow-xl ring-4 ring-white ring-opacity-60 mb-8 transition-all duration-300 transform hover:scale-110 hover:shadow-2xl hover:ring-purple-300">
+                <img src="https://placehold.co/500x500/A0B9D8/ffffff?text=Your+Photo" alt="Placeholder for a personal photo" class="w-full h-full object-cover">
+            </div>
+            
+            <!-- Main Heading with Name -->
+            <h1 class="text-5xl sm:text-6xl font-extrabold text-gray-900 mb-4 transition-colors duration-300 hover:text-pink-500">PAVITHRA.M</h1>
+            
+            <!-- Personal Tagline -->
+            <p class="text-xl sm:text-2xl font-medium text-gray-600 max-w-2xl">
+                A data science student with a passion to become a full stack developer.
+            </p>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="bg-white bg-opacity-50 p-8 rounded-lg shadow-lg mb-8 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:border-2 hover:border-purple-300">
+            <h2 class="text-3xl font-semibold text-center mb-4 text-gray-800">About Me</h2>
+            <p class="text-lg text-gray-700 text-center mb-6">
+                I am a dedicated data science student, always seeking to expand my knowledge and skills. My journey is driven by a profound interest in combining analytical insights with the creative power of full stack development. I am excited to build intuitive and robust applications that solve real-world problems.
+            </p>
+
+            <!-- Skills Section -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
+                <div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Programming Skills</h3>
+                    <ul class="list-disc list-inside text-lg text-gray-700 space-y-1 inline-block text-left">
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>C</li>
+                        <li>C++</li>
+                        <li>HTML</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Designing Skills</h3>
+                    <ul class="list-disc list-inside text-lg text-gray-700 space-y-1 inline-block text-left">
+                        <li>Canva</li>
+                        <li>Photoshop</li>
+                        <li>Logo Design</li>
+                        <li>Digital Painting</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section with Contact Form and Social Icons -->
+    <footer id="contact" class="bg-gray-900 text-white rounded-t-lg shadow-lg mt-auto p-8">
+        <div class="container mx-auto">
+            
+            <!-- Contact Form Section -->
+            <div class="max-w-xl mx-auto text-center mb-8 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:border-2 hover:border-purple-300 rounded-lg p-6">
+                <h2 class="text-3xl font-bold mb-4">Let's Connect</h2>
+                <p class="text-gray-400 mb-6">Have a question or a project in mind? Feel free to reach out!</p>
+                <form id="contactForm" class="flex flex-col space-y-4">
+                    <textarea id="message" rows="4" class="w-full p-4 rounded-lg bg-gray-800 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500 transition-colors" placeholder="Your message..."></textarea>
+                    <button type="submit" class="bg-purple-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-purple-700 transition-colors">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+
+            <!-- Social Media Icons -->
+            <div class="flex justify-center space-x-6 text-2xl mb-8">
+                <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fas fa-envelope"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-instagram"></i></a>
+            </div>
+
+            <!-- Footer Namespace -->
+            <div class="text-center text-gray-500 text-sm mt-8">
+                &copy; 2024 PAVITHRA.M. All rights reserved.
+            </div>
+            
+        </div>
+    </footer>
+
+    <!-- Custom Message Box for form feedback -->
+    <div id="messageBox" class="message-box">
+        <h3 class="text-2xl font-bold mb-2 text-gray-900">Thank You!</h3>
+        <p class="text-lg text-gray-700 mb-4" id="messageBoxText">Your message has been noted.</p>
+        <button id="closeMessageBox" class="bg-purple-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition-colors">
+            Close
+        </button>
+    </div>
+
+    <!-- JavaScript for the form -->
+    <script>
+        // Form submission logic with custom message box
+        const contactForm = document.getElementById('contactForm');
+        const messageBox = document.getElementById('messageBox');
+        const messageBoxText = document.getElementById('messageBoxText');
+        const closeMessageBoxBtn = document.getElementById('closeMessageBox');
+
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            
+            const message = document.getElementById('message').value;
+            
+            if (message.trim() !== '') {
+                // In a real application, you would send this data to a server.
+                // For this simple example, we'll just log it to the console.
+                console.log("Message received:", message);
+                
+                // Show the custom message box
+                messageBoxText.textContent = "Thank you for your message! It has been noted.";
+                messageBox.classList.add('show');
+
+                // Clear the textarea
+                document.getElementById('message').value = '';
+            } else {
+                // Show a message for empty input
+                messageBoxText.textContent = "Please enter a message before sending.";
+                messageBox.classList.add('show');
+            }
+        });
+
+        closeMessageBoxBtn.addEventListener('click', function() {
+            messageBox.classList.remove('show');
+        });
+    </script>
+</body>
+</html>

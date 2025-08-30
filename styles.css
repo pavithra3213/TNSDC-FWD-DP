@@ -1,0 +1,140 @@
+/* Global Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    /* Reset cursor to default */
+    cursor: auto;
+}
+
+/* Styling for the custom message box */
+.message-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    z-index: 10000;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.message-box.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Tailwind customizations */
+header {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+header nav a {
+    color: #2d2d2d;
+}
+
+header nav a:hover {
+    color: #6b21a8;
+}
+
+/* About Section */
+#about {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+#about h2 {
+    color: #2d2d2d;
+}
+
+#about p {
+    color: #4a4a4a;
+}
+
+/* Skills Section */
+#about ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #4a4a4a;
+}
+
+#about ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Footer Section */
+footer {
+    background-color: #1f2937;
+    color: white;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+/* Footer Contact Form */
+footer .max-w-xl {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+footer form textarea {
+    background-color: #2d3748;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    resize: none;
+    transition: border 0.3s ease;
+}
+
+footer form button {
+    background-color: #6b21a8;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+footer form button:hover {
+    background-color: #9d4edd;
+}
+
+footer .text-2xl a {
+    color: #cbd5e0;
+}
+
+footer .text-2xl a:hover {
+    color: white;
+}
+
+/* Social Icons Styling */
+footer .flex a {
+    color: #cbd5e0;
+    transition: color 0.3s ease;
+}
+
+footer .flex a:hover {
+    color: white;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul {
+        margin-top: 1rem;
+    }
+
+    footer {
+        padding: 1.5rem;
+    }
+}
